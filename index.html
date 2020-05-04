@@ -1,0 +1,229 @@
+
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="index.css"> 
+
+<div class="decor">
+    <h1 class="form-inner1"> _АПТЕКА_л_р_</h1>
+    <form action="header.php" method="get">
+            <div >
+                    <input type="submit" name="button33"  class="cl" value=""/>
+            </div>
+    </form>
+</div>
+
+<!--<div><img src="unnamed.png" class="animal1"/> <img src="unnamed.png" class="animal2"/></div> -якщо захочу картинки вгорі-->
+
+<title>Аптека</title>
+</head>
+
+<body class="content">
+
+<script type="text/javascript">
+    $(function() {
+         $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('.toTop').fadeIn();
+                } else {
+                $('.toTop').fadeOut();
+                }
+            });
+        $('.toTop').click(function() {
+            $('body,html').animate({scrollTop:0},1000);
+        });
+    });
+</script>
+
+<div class = "toTop" > </div>
+
+
+<form action="header.php" method="get">
+        
+    <div class="aminals"><img src="1шалфей.jpg"  class="animal" title="Шалфей" /></div>
+
+    <div class="aminals"><img src="1мати й мачуха.jpg" class="animal" title="Мати-й-мачуха" /></div>
+        
+    <div class="aminals"><img src="3люцерна.jpg" class="animal" title="Люцерна" /></div>
+        
+    <div class="aminals"><img src="4полинь.jpg" class="animal" title="Полинь" /></div>
+
+    <div class="aminals"><img src="5пустирник.jpg" class="animal" title="Пустирник" /></div>
+        
+    <div class="aminals"><img src="6кропива.jpg" class="animal" title="Кропива" /></div>
+        
+    <div class="aminals"><img src="7женьшень.jpg" class="animal" title="Женьшень" /></div>
+        
+    <div class="aminals"><img src="8хвощ.jpg" class="animal" title="Хвощ" /></div>
+
+    <div class="aminals"><img src="9гінкго білоба.jpg" class="animal" title="Гінгко білоба" /></div>
+        
+    <div class="aminals">  <img src="10алоэ.jpg" class="animal" title="Алоє" /></div>  
+
+    <div class="aminals"><img src="11безсмертник.jpg" class="animal" title="Безсмертник" /></div>
+
+    <div class="aminals"><img src="12деревій.jpg" class="animal" title="Деревій" /></div>
+
+    <div class="aminals"><img src="13подорожник.jpg" class="animal" title="Подорожник" /></div>
+
+    <div class="aminals"><img src="14ромашка.jpg" class="animal" title="Ромашка" /></div>
+	
+	 <div class="aminals"><img src="15 петрів-батіг.jpg" class="animal" title="Петрів-батіг" /></div>
+	 
+	  <div class="aminals"><img src="16 чебрець.jpg" class="animal" title="Чебрець" /></div>
+	  
+	   <div class="aminals"><img src="17ехінацея.jpg" class="animal" title="Ехінацея" /></div>
+	   
+	    <div class="aminals"><img src="18шипшина.jpg" class="animal" title="Шипшина" /></div>
+		
+   
+ 
+
+    <div class="decor1">           
+        <div class="form-inner">
+             <div class="px">
+                <p>Добавляння або видалення даних в таблиці ТОВАРИ</p>
+                <p><input type="text" name="insert10" placeholder="Id товару"></p>
+                <p><input type="text" name="insert11" placeholder="Id аптеки"></p>
+                <p><input type="text" name="insert12" placeholder="Назва"></p>
+                <p><input type="text" name="insert13" placeholder="Кількість"></p>
+                <p><input type="text" name="insert14" placeholder="Ціна"></p>
+                <p><input type="text" name="insert15" placeholder="Id типу"></p>
+                <p><input type="text" name="insert16" placeholder="Id призначення"></p>
+               
+                <p><input type="submit" name="tv" value="Додати"/></p>
+        
+                <p><input type="text" name="insert18" placeholder="Id товару"></p>
+                <p><input type="submit" name="tv1" value="Видалити" /></p>
+
+                <p><input type="submit" name="button1" value="Переглянути" /></p>
+            </div>
+			
+			 <div class="px">
+                <p>Запит на вибірку з використанням between….and ТОВАРИ</p>
+                <p><input type="text" name="begin1" placeholder="Ціна товару від ..."></p>
+                <p><input type="text" name="end1"  placeholder="Ціна товару до ..."></p>
+                <p><input type="submit" name="button2" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                <p>Запит на вибірку з використанням like ТОВАРИ</p>
+                <p><input type="text" name="begin3" placeholder="Назва починається на букву..."></p>
+                <p><input type="submit" name="button4" value="Перегляд"/></p>
+            </div>
+			
+			
+            <div class="px">
+                    <p>Запит на вибірку з двома умовами через “and” ТОВАРИ</p>
+                    <p><input type="text" name="begin4" placeholder="Id типу"></p>
+                    <p><input type="text" name="begin5" placeholder="Id призначення"></p>
+                    <p><input type="submit" name="button5" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                    <p>Запит на вибірку з двома умовами через “or” ТОВАРИ</p>
+                    <p><input type="text" name="begin6" placeholder="Назва"></p>
+                    <p><input type="text" name="begin7" placeholder="Кількість"></p>
+                    <p><input type="submit" name="button6" value="Перегляд"/></p>
+            </div>
+			
+			 <div class="px">
+                    <p>Запит на вибірку з використанням DISTINCT ТОВАРИ</p>
+                    <p><input type="submit" name="button7" value="Перегляд"/></p>
+            </div>
+			
+			 <div class="px">
+                    <p>Запит з функції max ТОВАРИ</p>
+                    <p><input type="submit" name="button8" value="Перегляд"/></p>
+            </div>
+			
+			 <div class="px">
+                <p>Запит з використанням підзапита з використанням (<)ТОВАРИ</p>
+                <p><input type="submit" name="button15" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                    <p>Запит з функцією avg ТОВАРИ</p>
+                    <p><input type="submit" name="button9" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                <p>Запит з використанням підзапита з використанням IN ТОВАРИ</p>
+                <p><input type="text" name="begin11" placeholder="Назва"></p>
+                <p><input type="submit" name="button17" value="Перегляд"/></p>
+            </div>
+
+            <div class="px">
+                <p>Добавляння, редагування або видалення даних в таблиці ПРАЦІВНИКИ</p>
+                <p><input type="text" name="insert1" placeholder="Id робітника"></p>
+                <p><input type="text" name="insert2" placeholder="Id посади"></p>
+                <p><input type="text" name="insert3" placeholder="Id аптеки"></p>
+				 <p><input type="text" name="insert4" placeholder="ПІП"></p>
+				 
+				
+                <p><input type="submit" name="button" value="Добавити" /></p>
+
+                <p><input type="text" name="insert6" placeholder="Id робітника"></p>
+                <p><input type="text" name="insert7" placeholder="New Id посади"></p>
+                <p><input type="text" name="insert8" placeholder="New Id аптеки"></p>
+				<p><input type="text" name="insert9" placeholder="New ПІП"></p>
+                <p><input type="submit" name="editing" value="Редагувати" /></p>
+
+               <p><input type="text" name="insert5" placeholder="Id працівника"></p>
+                <p><input type="submit" name="delbutt" value="Видалити" /></p>
+
+                <p><input type="submit" name="button0" value="Перегляд" /></p>
+            </div>
+			
+                <div class="px">
+                <p>Запит з використанням INNER JOIN ПРАЦІВНИКИ</p>
+                <p><input type="submit" name="button11" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                <p>Запит з використанням INNER JOIN і умовою LIKE ПРАЦІВНИКИ/ПОСАДА</p>
+                <p><input type="text" name="begin9" placeholder="Посада"></p>
+                <p><input type="submit" name="button14" value="Перегляд"/></p>
+            </div>
+			
+            <div class="px">
+                <p>Запит на вибірку з використанням in ПОСТАВКА</p>
+                <p><input type="text" name="begin2" placeholder="Id постачальника"></p>
+                <p><input type="text" name="end2" placeholder="Id постачальника(2)"></p>
+                <p><input type="submit" name="button3" value="Перегляд"/></p>
+            </div> 
+			
+			 <div class="px">
+                <p>Запит на вибірку з використанням агрегатної функції і умовою на вибірку поля ПОСТАВКА</p>
+                <p><input type="submit" name="button12" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                <p>Запит на вибірку з використанням агрегатної функції і виведенням ще декількох полів ПОСТАВКА</p>
+                <p><input type="submit" name="button13" value="Перегляд"/></p>
+            </div>
+            
+			
+            <div class="px">
+                    <p>Запит з функцією count ПОСТАЧАЛЬНИКИ</p>
+                    <p><input type="submit" name="button10" value="Перегляд"/></p>
+            </div>
+			
+			<div class="px">
+                <p>Запит з використанням підзапита з використанням оператора EXIST ПОСТАЧАЛЬНИКИ(фірма)</p>
+                <p><input type="text" name="begin10" placeholder="Фірма"></p>
+                <p><input type="submit" name="button16" value="Перегляд"/></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="decor2">
+        <p class="form-inner2">© Організація баз даних і знань «Проектування бази даних "Аптека лікарських рослин"» 2020 </p>
+       <!-- <img src="фон2.jpg" class="animal3" - якщо захочу вставити картинку -->
+    </div>
+</form>
+        
+</body>
+</html>

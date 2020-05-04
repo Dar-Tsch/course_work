@@ -1,0 +1,2 @@
+﻿AddDefaultCharset UTF-8
+php_flag display_errors off
